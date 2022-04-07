@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<script src="../code/jQuery.js"></script>
+<script>
+    // var ajax_ = new XMLHttpRequest();
+    // ajax_.open('get', 'http://192.168.43.1:3000/useing/public', true);
+    // ajax_.send();
+    // ajax_.onreadystatechange = function () {
+    //     if (ajax_.readyState == 4) {
+    //         if (ajax_.status == 200) {
+    //             console.log(JSON.parse(ajax_.responseText))
+    //         } else { console.log('请求失败') }
+    //     }
+    // }
+    function get_(b) {
+        console.log(b);
+    }
+    $.ajax({
+        type: 'GET',
+        url: 'http://192.168.43.200:3000/useing/public',
+        async: false,
+        success: function (data) {
+            get_(data);
+            a = data
+        }
+    })
+    console.log(a);
+</script>
