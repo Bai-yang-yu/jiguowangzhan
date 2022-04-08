@@ -1,0 +1,67 @@
+/* 版心 */
+.w{
+    width: 1200px;
+    margin: 0 auto;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+a{
+    color: black;
+}
+/* 头部  shortcut*/
+.shortcut .w{
+    height: 81px;
+    font-size: 15px;
+    line-height: 81px;
+    box-shadow: 50px;
+    background-color:#FFFFFF;
+}
+.shortcut ul li{
+    padding-left: 30px;
+    float: left;
+}
+/* 底部 footer */
+.footer{
+    padding-top: 20px;
+    padding-left: 50px;
+    height: 320px;
+    background-color: #505050;
+}
+.fl dl{
+    float: left;
+    width: 180px;
+    padding-left: 20px;
+ }
+ .fl dt{
+     text-align: center;
+    color: #FFFFFF;
+    font-size: 18px;
+    padding-bottom: 20px;
+ }
+ .fl dd{
+    text-align: center;
+    font-size: 10px;
+    color: #9C9D94;
+}
+.fl dd a {
+    color: #9C9D94;
+}
+.fl dd a:hover{
+    cursor: pointer;
+    color: #FFFFFF;
+}
+ .fl_a{
+    float: left;
+    width: 140px;
+    margin-left: 10px;
+ }
+.fl_a dd{
+    padding-top: 20px;
+    text-align: center;
+    font-size: 10px;
+    color: #9C9D94;
+}
