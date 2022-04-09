@@ -1,5 +1,5 @@
 /*把我们所有标签的内外边距清零*/
-*{
+* {
     margin: 0;
     padding: 0;
     /* css3盒子模型 */
@@ -8,47 +8,59 @@
 
 
 }
+
 /* em和i斜体的文字不倾斜*/
 emm,
 i {
-   font-style: normal; 
+    font-style: normal;
 }
+
 /*去掉Li的小圆点*/
 li {
     list-style: none;
 }
-img{
+
+img {
     /* border 0照顾低版 本浏览器如果图片外面包含 了链接会 有边框的问题 */
     border: 0;
     /*取消图片底侧有空白缝隙的问题*/
     vertical-align: middle;
 
 }
-button{
+
+button {
     /*当我们鼠标经过button按钮的时候，鼠标变成小手*/
     cursor: pointer;
 }
+
 a {
     columns: #666;
     text-decoration: none;
 }
-a:hover{
+
+a:hover {
     color: #fe5341;
 }
+
 button,
-input{
-    font-family: 'Microsoft YaHei','Heiti SC',tahoma,arial,'Hiragino SansGB',\\5B8B\4F53,sans-serif;
+input {
+    font-family: 'Microsoft YaHei', 'Heiti SC', tahoma, arial, 'Hiragino SansGB', \\5B8B\4F53, sans-serif;
     color: #666;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 426320fb044a808853159903bf0b651ac65ae00b
 /* body{
     background-color: #fff;
     font: 12px/1.5 'Microsoft YaHei','Heiti SC',tahoma,arial,'Hiragino SansGB',\\5B8B\4F53,sans-serif;
     color: #fe5341;
 } */
 .hide,
-.none{
+.none {
     display: none;
 }
+
 /* 清除浮动 */
 .clearfix:after {
     visibility: hidden;
@@ -57,6 +69,7 @@ input{
     content: ".";
     height: 0;
 }
+
 clearfix {
     *zoom: 1;
 }
