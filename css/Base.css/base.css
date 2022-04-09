@@ -40,11 +40,11 @@ input{
     font-family: 'Microsoft YaHei','Heiti SC',tahoma,arial,'Hiragino SansGB',\\5B8B\4F53,sans-serif;
     color: #666;
 }
-body{
+/* body{
     background-color: #fff;
     font: 12px/1.5 'Microsoft YaHei','Heiti SC',tahoma,arial,'Hiragino SansGB',\\5B8B\4F53,sans-serif;
     color: #fe5341;
-}
+} */
 .hide,
 .none{
     display: none;
