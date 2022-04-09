@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>试用</title>
+    <!-- 链接jquery文件 -->
+    <script src="../js/jquery.min.js"></script>
+    <!-- 链接模板引擎文件 -->
+    <script src="../js/art-template.js"></script>
+    <!-- 链接封装的ajax文件 -->
+    <script src="../js/ajax.js"></script>
+    <!-- 链接公共部分css文件shouye.css -->
+    <link rel="stylesheet" href="../css/style/shouye.css" />
+    <!-- 链接公共部分css文件guide.css -->
+    <link rel="stylesheet" href="../css/style/guide.css" />
+    <!-- 链接公共部分js文件shouoye.js -->
+    <script src="../js/shouye.js"></script>
+    <!-- 链接对应的css文件use.css -->
+    <link rel="stylesheet" href="../css/style/use.css" />
+    <!-- 链接对应的js文件use.js -->
+    <script src="../js/use.js"></script>
+  </head>
+  <body>
+    <!-- 顶部导航栏 -->
+    <!-- 公共部分顶部导航栏 -->
+    <div id="top_banner">
+      <img src="../img/logonew.png" alt="" width="130px;" />
+      <ul class="clearfix">
+        <li>
+          <a href="../index.html" target="_blank">首页</a>
+        </li>
+        <li>
+          <a href="../play/play.html" target="_blank">酷玩</a>
+        </li>
+        <li>
+          <a href="../guid/guid.html" target="_blank">导购</a>
+        </li>
+        <li>
+          <a href="../use/use.html">试用</a>
+        </li>
+        <li>
+          <a href="">报告</a>
+        </li>
+      </ul>
+      <div id="search_register">
+        <img src="../css/img/search.png" alt="" id="search" />
+        <span><a href="" id="register">注册</a></span>
+        <span><a href="" id="login">登录</a></span>
+      </div>
+    </div>
+    <!-- 导购主体部分 -->
+    <div class="guid-content">
+      <div class="guid-title clearfix">
+        <h1>免费试用</h1>
+        <div class="title clearfix">
+          <span class="zuixin border-bottom">大众试用</span>
+          <span class="zuire">体验师专享</span>
+        </div>
+      </div>
+
+      <div class="little-title-max">
+        <div class="little-title">
+          <span class="all span_style">全部</span>
+          <span class="apply">申请中</span>
+          <span class="try">试用中</span>
+          <span class="over">已结束</span>
+        </div>
+      </div>
+      <!-- 数据展示区域 -->
+      <ul class="show clearfix"></ul>
+      <script type="text/html" id="tpl">
+        {{each data}}
+        <li class="clearfix">
+          <img src="{{$value.img}}" alt="" />
+          <h4>{{$value.text}}</h4>
+          <p class="info_ty">{{$value.info_ty}}</p>
+          <span class="totalnum">{{$value.totalnum}}</span>
+          <span class="num">{{$value.num}}台</span>
+          <p class="apply_">
+            {{$value.apply}}<span class="shenqing">申请</span>
+          </p>
+        </li>
+        {{/each}}
+      </script>
+    </div>
+
+    <!-- 公共部分底部 -->
+    <div class="bottom-max">
+      <div class="bottom clearfix">
+        <!-- 底部左侧二维码 -->
+        <div id="bottom-left">
+          <img src="../img/code.png" alt="" />
+        </div>
+
+        <!-- 底部中间部分 -->
+        <div id="bottom-middle">
+          <img src="../img/logoImg.jpg" alt="" />
+          <p>全球酷玩试用导购平台酷·新奇·好玩·品质</p>
+          <p>微信添加“JguoJguo”获取我们的服务。</p>
+        </div>
+
+        <!-- 底部右侧 -->
+        <div id="bottom-right">
+          <dl class="bottom-right-dl">
+            <dt>免费试用</dt>
+            <dd>
+              <a href="">试用流程</a>
+            </dd>
+            <dd>
+              <a href="">如何提高成功率</a>
+            </dd>
+          </dl>
+          <dl class="bottom-right-dl">
+            <div class="bottom-right-dl-left">
+              <dt>友情链接</dt>
+              <dd>
+                <a href="javascript:;">智东西</a>
+              </dd>
+              <dd>
+                <a href="javascript:;">搜狐IT</a>
+              </dd>
+              <dd>
+                <a href="javascript:;">搜狐数码</a>
+              </dd>
+              <dd>
+                <a href="javascript:;">凤凰数码</a>
+              </dd>
+              <dd>
+                <a href="javascript:;">泡泡网</a>
+              </dd>
+              <dd>
+                <a href="javascript:;">ZUK社区</a>
+              </dd>
+              <dd>
+                <a href="javascript:;">极客公园</a>
+              </dd>
+              <dd>
+                <a href="javascript:;">果库</a>
+              </dd>
+            </div>
+
+            <div class="bottom-right-dl-right">
+              <dd>
+                <a href="javascript:;">WEIBUSI</a>
+              </dd>
+              <dd>
+                <a href="javascript:;">腾讯科技</a>
+              </dd>
+              <dd>
+                <a href="javascript:;">凤凰科技</a>
+              </dd>
+              <dd>
+                <a href="javascript:;">PConline</a>
+              </dd>
+              <dd>
+                <a href="javascript:;">3W咖啡</a>
+              </dd>
+              <dd>
+                <a href="javascript:;">亿觅emie</a>
+              </dd>
+              <dd>
+                <a href="javascript:;">易迅易启玩</a>
+              </dd>
+            </div>
+          </dl>
+          <dl class="bottom-right-dl">
+            <dt>购买攻略</dt>
+            <dd>
+              <a href="javascript:;">美亚海淘教程</a>
+            </dd>
+            <dd>
+              <a href="javascript:;">日亚海淘教程</a>
+            </dd>
+            <dd>
+              <a href="javascript:;">海淘转运攻略</a>
+            </dd>
+            <dd>
+              <a href="javascript:;">kickstarter 众筹购买攻略</a>
+            </dd>
+            <dd>
+              <a href="javascript:;">indiegogo 众筹购买攻略</a>
+            </dd>
+          </dl>
+          <dl class="bottom-right-dl">
+            <dt>厂商合作</dt>
+            <dd>
+              <a href="javascript:;">关于极果</a>
+            </dd>
+            <dd>
+              <a href="javascript:;">联系我们</a>
+            </dd>
+            <dd>
+              <a href="javascript:;">商务合作：BD@jiguo.com</a>
+            </dd>
+            <dd>
+              <a href="javascript:;">CEO邮箱：CEO@jiguo.com</a>
+            </dd>
+          </dl>
+        </div>
+      </div>
+      <!-- 最底部版权和返回顶部 -->
+      <p class="banquan">2016 极果版权所有</p>
+      <div class="back">
+        <img src="../css/img/back.png" />
+      </div>
+    </div>
+  </body>
+</html>

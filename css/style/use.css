@@ -1,0 +1,101 @@
+/* 导购主体部分 */
+.zuixin,
+.zuire{
+    color:#B2B1BA;
+}
+.border-bottom{
+    color:red;
+}
+.little-title-max{
+    background-color: white;
+    width: 100%;
+    margin-top:3px;
+}
+.little-title{
+    margin: 0 auto;
+    width: 1080px;
+    line-height:40px;
+    text-align: center;
+}
+.all,
+.apply,
+.try,
+.over{
+    display: inline-block;
+    width: 150px;
+    font-size:14px;
+    cursor: pointer;
+    color:#B2B1BA;
+}
+.span_style{
+    color: red;
+}
+/* 数据展示区域 */
+.show{
+    width: 1080px;
+    margin: 0 auto;
+    margin-top:20px;
+}
+.show li{
+    width: 250px;
+    height: 330px;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    float: left;
+    border-radius:8px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    transition: all .3s;
+}
+/* li标签点击动画效果 */
+.show li:hover{
+    transform: translateY(-4px);
+    box-shadow: 0px 8px 20px 6px rgba(0, 0, 0,.2);
+}
+.show li .img_{
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.show li h4{
+    height: 41px;
+    padding-top: 10px;
+    font-weight: 700;
+}
+.info_ty{
+    font-size:12px;
+    width: 65px;
+    text-align: center;
+    line-height:30px;
+    color:white;
+    background-color:#F85145;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    position:absolute;
+    right:0;
+    top: 0;
+}
+.totalnum,
+.num{
+    display: inline-block;
+    color:red;
+    font-size:13px;
+    border: 1px solid red;
+    width: 55px;
+    line-height:25px;
+    margin-top:10px;
+    margin-bottom:10px;
+    border-radius:6px;
+    margin-left:10px;
+}
+.apply_{
+    color:red;
+    font-size:17px;
+}
+.shenqing{
+    color:black;
+}

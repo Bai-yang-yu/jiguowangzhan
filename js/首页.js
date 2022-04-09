@@ -43,6 +43,7 @@ $(function () {
     slide()
     var timer1;
     var timer2;
+    var timer3;
     var time1 = 0;
     var switch_ = 1;
     var SR = -800;
@@ -50,19 +51,17 @@ $(function () {
         if (switch_ == 1) {
             switch_ = 0;
             timer2 = setInterval(function () {
-                SR -= 100;
-                time1 += 1;
                 if (SR <= -1600) {
-                    clearInterval(timer2);
                     $('.sImg').children('ul').css('left', '0');
                     SR = 0;
                 }
+                SR -= 100;
+                time1 += 1;
                 $('.sImg').children('ul').css('left', SR);
                 if (time1 >= 8) {
                     clearInterval(timer2);
                     switch_ = 1;
                     time1 = 0;
-                    slide()
                 }
             }, 50)
         }
@@ -70,20 +69,18 @@ $(function () {
     function slideL() {
         if (switch_ == 1) {
             switch_ = 0;
-            timer2 = setInterval(function () {
-                SR += 100;
-                time1 += 1;
+            timer3 = setInterval(function () {
                 if (SR >= 0) {
-                    clearInterval(timer2);
                     $('.sImg').children('ul').css('left', '-1600');
                     SR = -1600;
                 }
+                SR += 100;
+                time1 += 1;
                 $('.sImg').children('ul').css('left', SR);
                 if (time1 >= 8) {
-                    clearInterval(timer2);
+                    clearInterval(timer3);
                     switch_ = 1;
                     time1 = 0;
-                    slide()
                 }
             }, 50)
         }
@@ -136,7 +133,7 @@ $(function () {
     function InHtml2(a) {
         $.each(a, function (i, n) {
             if (i >= 11) {
-                var html_ = $(' <li><img src = "" alt = ""><p></p><span class="L_C"><span></span><span></span></span></li > ');
+                var html_ = $(' <li><img src = "" alt = ""><p></p><span></span><span class="L_C"><span></span><span></span></span></li > ');
                 $('.buyChoose').children('ul').append(html_);
                 $('.buyChoose').children('ul').children('li:last').children('img').attr('src', n.img);
                 $('.buyChoose').children('ul').children('li:last').children('p').html(n.text);

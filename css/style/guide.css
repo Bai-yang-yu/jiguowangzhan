@@ -1,0 +1,80 @@
+/* 内容部分 */
+.guid-content{
+    background-color:#F7F7F7;
+    padding-top: 2px;
+}
+.guid-title{
+    margin-top:5px;
+    background-color:white;
+}
+.guid-title h1{
+    text-align: center;
+    font-weight: 400;
+    line-height:120px;
+}
+.title{
+    width: max-content;
+    margin:0 auto;
+}
+.zuixin,
+.zuire{
+    cursor: pointer;
+    float:left;
+    width: 180px;
+    line-height:50px;
+    text-align: center;
+    margin-right: 30px;
+}
+.border-bottom{
+    color:red;
+    border-bottom:3px solid red;
+}
+.content{
+    margin: 0 auto;
+    width: 1080px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+.content li{
+    width: 245px;
+    height: 245px;
+    cursor: pointer;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    float: left;
+    border-radius:8px;
+    overflow: hidden;
+    position: relative;
+    transition: all .3s;
+}
+/* li标签点击动画效果 */
+.content li:hover{
+    transform: translateY(-4px);
+    box-shadow: 0px 8px 20px 6px rgba(0, 0, 0,.2);
+}
+.content li .img_{
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.content li p{
+    margin-top:10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size:14px;
+}
+.like,
+.words{
+    font-size:13px;
+}
+.like-word{
+    position:absolute;
+    right: 10px;
+    bottom: 20px;
+}
+.like-img,
+.words-img{
+    width:13px;
+    vertical-align:middle;
+}

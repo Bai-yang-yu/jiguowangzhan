@@ -1,0 +1,15 @@
+.pinlei{
+    cursor: pointer;
+    float:left;
+    width: 180px;
+    line-height:50px;
+    text-align: center;
+    margin-right: 30px;
+}
+.price{
+    color: red;
+    float: left;
+    position: absolute;
+    left: 10px;
+    bottom: 20px;
+}
